@@ -11,7 +11,7 @@ a:hover, a:active {
 body {
   text-align:left;
   font-size:76%;
-  font-family: Verdana,Arial, Helvetica, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   background: #afa582;
   color: #444455;
 }
@@ -54,6 +54,10 @@ padding: 0.5em 5px;
 }
 #search input.inputbox {
   border: 1px solid #afa582;
+}
+#pathway {
+  line-height: 12px;
+  margin-top: 1px;
 }
 .breadcrumb {
   font-size: 10px;
@@ -115,6 +119,29 @@ list-style-image: url("../../../images/arrow.png");
 div#topmenu .nav-collapse {
     text-transform: none;
 }
+div#topmenu.navbar .brand {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 0;
+}
+.navbar .btn-navbar {
+  margin: 1px;
+}
+div#topmenu .nav-collapse {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+div#topmenu.navbar .nav-collapse .nav li a {
+  padding: 8px 15px;
+}
+div#topmenu .navbar-inner {
+  background-color: #afa582;
+  min-height: 35px;
+}
+.navbar-inverse .brand, .navbar-inverse  > li > a {
+  color: white !important;
+}
 div#topmenu.navbar-inverse .nav > li > a {
     color: gray;
     background-color: #f3f0da;
@@ -128,10 +155,6 @@ div#topmenu.navbar .nav > .active > a, div#topmenu.navbar .nav > .active > a:hov
     box-shadow: none;
 }
 div.app_ws_legend_color {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
     border-bottom-color: #000;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -140,24 +163,7 @@ div.app_ws_legend_color {
     border-image-slice: 100% 100% 100% 100%;
     border-image-source: none;
     border-image-width: 1 1 1 1;
-    border-left-color-ltr-source: physical;
-    border-left-color-rtl-source: physical;
-    border-left-color-value: #000;
-    border-left-style-ltr-source: physical;
-    border-left-style-rtl-source: physical;
-    border-left-style-value: solid;
-    border-left-width-ltr-source: physical;
-    border-left-width-rtl-source: physical;
-    border-left-width-value: 1px;
-    border-right-color-ltr-source: physical;
-    border-right-color-rtl-source: physical;
-    border-right-color-value: #000;
-    border-right-style-ltr-source: physical;
-    border-right-style-rtl-source: physical;
-    border-right-style-value: solid;
-    border-right-width-ltr-source: physical;
-    border-right-width-rtl-source: physical;
-    border-right-width-value: 1px;
+    border-right-width: 1px;
     border-top-color: #000;
     border-top-style: solid;
     border-top-width: 1px;
@@ -213,9 +219,6 @@ div.app_ws_space_bottom_07 {
 .item-481, .item-325 {
     border-bottom-width: 0 !important;
 }
-#pathway {
-	margin-top: 10px;
-}
 .img_caption {
     text-align: center !important; 
     font-size: 95%;
@@ -224,7 +227,9 @@ div.app_ws_space_bottom_07 {
 .btn {
     margin-top: 12px;
 }
-
+.row-fluid [class*="span"] {
+  min-height: 8px;
+}
 .fa:before {
   font-family: fontawesome;
   line-height: 1px;
@@ -237,3 +242,9 @@ div.app_ws_space_bottom_07 {
   line-height: 18px;
   color: #445;
 }
+#jk-nh118 {
+  margin-top: 4px;
+}
+.phocamaps-box {
+  margin-top: 0px !important;
+}  
